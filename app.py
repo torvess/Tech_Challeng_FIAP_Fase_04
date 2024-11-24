@@ -101,7 +101,7 @@ with tab2:
 with tab3:
     st.header('Previsão de Preços por Data ⛽')
 
-    date = st.date_input("Selecione uma data", min_value=(pd.to_datetime('2024-01-01')))
+    date = st.date_input("Selecione uma data", pd.to_datetime('2024-01-01'), min_value=(pd.to_datetime('2024-01-01')))
 
     model_sn = joblib.load(r'Modelos/SeasonalNaive.joblib')
 
