@@ -43,7 +43,7 @@ with tab2:
         * Entre 2020 e 2023 nova tendência de aumento seguido por queda
         """)
 
-    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/\gaf1_serie_temporal.png')
+    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf1_serie_temporal.png?raw=true')
 
     st.markdown(
         """
@@ -124,7 +124,7 @@ with tab2:
         * 2023: Queda no preço, variando entre 75 e 95 dólares, sem outliers.
         """)
     
-    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf2_boxplot_preco_por_ano.png')
+    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf2_boxplot_preco_por_ano.png?raw=true')
 
     st.markdown(
         """
@@ -133,7 +133,7 @@ with tab2:
         *Volatilidade dos Preços do Petróleo: A linha laranja que representa a média dos preços anuais do petróleo mostra uma grande volatilidade. Os preços subiram acentuadamente até cerca de 2008, atingindo um pico, seguido por uma queda acentuada. Depois de 2010, os preços continuaram a flutuar, com uma queda significativa por volta de 2015 e outra em torno de 2020, talvez relacionada a crises econômicas ou eventos globais (como a pandemia de COVID-19 em 2020).*
         """)
     
-    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf_3_producao_preco_por_ano.png')
+    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf_3_producao_preco_por_ano.png?raw=true')
 
     st.markdown(
         """
@@ -152,7 +152,7 @@ with tab2:
         *Recuperação Pós-Pandemia (2021–2023): A partir de 2021, a produção retoma um crescimento moderado. Em 2022, destaca-se uma recuperação significativa de 4,69%, com a demanda global voltando aos níveis pré-pandêmicos. Em 2023, o crescimento continua, embora em um ritmo mais moderado (1,9%).*
         """)
     
-    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf4_crescimento_barris_por_ano.png')
+    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf4_crescimento_barris_por_ano.png?raw=true')
 
     st.markdown(
         """
@@ -173,7 +173,7 @@ with tab2:
         *Esses dados sublinham a importância estratégica do petróleo para cada uma dessas economias e evidenciam as diferenças na capacidade de produção entre os países, influenciando o mercado energético global.*
         """)
     
-    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf5_top_paises_producao.png')
+    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf5_top_paises_producao.png?raw=true')
 
     st.subheader('Dados Consumo de Energia')
 
@@ -187,15 +187,15 @@ with tab2:
         * *O gráfico destaca a relação complexa entre produção e consumo de petróleo, onde fatores externos e avanços tecnológicos parecem ter papel significativo. A análise dessas tendências ajuda a entender a segurança energética e a dependência de importações, além de fornecer insights sobre a resiliência da produção frente a demandas flutuantes.*
         """)
     
-    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf6_producao_consumo_anual.png')
+    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf6_producao_consumo_anual.png?raw=true')
 
     st.markdown('Top 10 países com maior consumo de energia')
 
-    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf7_top_paises_maior_consumo_energia.png')
+    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf7_top_paises_maior_consumo_energia.png?raw=true')
 
     st.subheader('PIB Mundial')
 
-    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf8_crescimento_pib.png')
+    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf8_crescimento_pib.png?raw=true')
 
     st.subheader('Mercado de Ações')
 
@@ -208,7 +208,7 @@ with tab2:
         * Picos e quedas menores refletem eventos econômicos ou geopolíticos que podem ter impactado o mercado.
         """)
     
-    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf9_desempenho_acoes.png')
+    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf9_desempenho_acoes.png?raw=true')
 
     st.markdown(
         """
@@ -219,11 +219,11 @@ with tab2:
         * Outra linha vermelha em 2020 destaca uma queda relacionada à pandemia de COVID-19, seguida por um crescimento acelerado nos anos seguintes.
         """)
     
-    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf10_desempenho_acoes2.png')
+    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf10_desempenho_acoes2.png?raw=true')
 
     st.subheader('Taxa de Juros')
 
-    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf11_taxa_juros.png')
+    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf11_taxa_juros.png?raw=true')
 
     st.markdown(
         """
@@ -231,7 +231,7 @@ with tab2:
         Reflete a saúde financeira dos bancos, mostrando a quantidade de capital que eles possuem em relação aos seus ativos. Serve para avaliar a solidez financeira do banco e sua capacidade de absorver perdas.
         """)
     
-    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf12_juros_emprestimo.png')
+    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf12_juros_emprestimo.png?raw=true')
 
     st.markdown(
         """
@@ -240,7 +240,7 @@ with tab2:
         """
     )
 
-    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf13_taxa_juros_razao_capital_bancario_pais.png')
+    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf13_taxa_juros_razao_capital_bancario_pais.png?raw=true')
 
     st.subheader('Análise Crise Financeira 2008')
 
@@ -254,9 +254,9 @@ with tab2:
         * Queda nos Preços do Petróleo: A desaceleração econômica reduziu a demanda por petróleo, provocando uma queda significativa nos preços.
         """)
     
-    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf14_crise_2008.png')
+    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf14_crise_2008.png?raw=true')
 
-    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf15_desempenho_acoes_2007_a_2009.png')
+    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf15_desempenho_acoes_2007_a_2009.png?raw=true')
 
     st.markdown(
         """
@@ -283,9 +283,9 @@ with tab2:
     
     st.subheader('Impacto da COVID-19 (2019, 2020 e 2021) no Preço do Petróleo')
 
-    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf16_impacto_covid.png')
+    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf16_impacto_covid.png?raw=true')
 
-    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf17_desempenho_acoes_tempos_covid.png')
+    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf17_desempenho_acoes_tempos_covid.png?raw=true')
 
     st.markdown(
         """
@@ -294,7 +294,7 @@ with tab2:
         *A partir do segundo semestre de 2020, o mercado de petróleo iniciou uma recuperação lenta. No final do ano, o preço se estabilizou em torno de $50 por barril, refletindo a expectativa de recuperação econômica com o início das campanhas de vacinação contra a COVID-19 e a adaptação global às novas condições de mercado.*
         """)
     
-    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf18_pib_tempos_covid.png')
+    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf18_pib_tempos_covid.png?raw=true')
 
     st.markdown(
         """
@@ -303,7 +303,7 @@ with tab2:
         *2020-2022: A queda drástica nas taxas de juros reais durante a pandemia pode ser explicada pelas políticas monetárias expansionistas adotadas para combater os efeitos econômicos da COVID-19. O banco central reduziu as taxas de juros para estimular a economia, facilitar o acesso ao crédito e mitigar a recessão econômica causada pela pandemia. A política de juros baixos também pode ter sido usada para combater a deflação, dada a queda na demanda agregada durante o período de confinamento e crise econômica.*
         """)
     
-    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf19_taxa_juros_tempos_covid.png')
+    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf19_taxa_juros_tempos_covid.png?raw=true')
 
     st.markdown(
         """
@@ -311,7 +311,7 @@ with tab2:
         """
     )
 
-    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf20_preco_mensal_petroleo_tempos_covid.png')
+    st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf20_preco_mensal_petroleo_tempos_covid.png?raw=true')
 
     st.markdown(
         """
