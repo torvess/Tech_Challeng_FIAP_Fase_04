@@ -16,13 +16,34 @@ with tab1:
     st.header('Sobre o Tech Challeng')
 
     texto = """
-    ### Objetivos deste Challeng: 
+    ### 
+    O preço do petróleo é um dos principais indicadores econômicos globais, influenciado por uma ampla
+    gama de fatores, como eventos geopolíticos, crises econômicas e oscilações na demanda global por
+    energia. Essa volatilidade apresenta desafios e oportunidades para empresas que dependem
+    diretamente do mercado de petróleo, tornando a análise de dados e a previsão de preços ferramentas
+    essenciais para a tomada de decisões estratégicas.
 
-    - **1**: Criação de WebScraping para extração dos dados no [site do IPEA](http://www.ipeadata.gov.br/ExibeSerie.aspx?module=m&serid=1650971490&oper=view).
-    - **2**: Criação de um dashboard interativo utilizando power bi.
-    - **3**: Análise exploratória dos dados utilizando o dashboard.
-    - **4**: Desenvolvimento de modelo para previsão de preços diários utilizando a série temporal disponibilizada.
-    - **5**: Construção de um site para exibir o dashboard e o deploy do modelo de Machine Learning.
+    Neste projeto, buscamos abordar essas necessidades por meio de uma solução abrangente que
+    combina visualização interativa de dados e previsão automatizada de preços. Para isso, utilizaremos
+    dados históricos do preço do petróleo Brent, disponíveis no site do IPEA, organizados em duas colunas:
+    data e preço (em dólares).
+
+    ##### Nosso trabalho envolverá:
+    Desenvolvimento de um dashboard interativo: Focado em storytelling, o dashboard apresentará
+    insights relevantes sobre as flutuações no preço do petróleo, incluindo fatores externos que
+    influenciam essas variações.
+
+    Criação de um modelo de Machine Learning para previsão diária dos preços: Utilizaremos
+    técnicas de séries temporais para modelar os dados históricos e gerar previsões.
+
+    Plano de deploy do modelo: Garantiremos que a solução possa ser implementada em produção,
+    incluindo um MVP funcional utilizando Streamlit.
+
+    A partir dessa abordagem, o objetivo é não apenas fornecer uma análise rica e informativa, mas também
+    empoderar o cliente com ferramentas práticas para antecipar tendências e adaptar-se rapidamente às
+    dinâmicas do mercado de petróleo.
+
+
 
     """
 
@@ -91,7 +112,7 @@ with tab2:
 
         * 2007: Aumento significativo, ultrapassando 80 dólares, sem outliers.
 
-        * **2008: O preço teve um aumento significativo, mas houve uma grande discrepância entre a média e os valores mínimo e máximo, com outliers no valor mínimo. Sugere-se investigar as causas desse comportamento.**
+        * 2008: O preço teve um aumento significativo, mas houve uma grande discrepância entre a média e os valores mínimo e máximo, com outliers no valor mínimo. Sugere-se investigar as causas desse comportamento.**
 
         * 2009: A queda drástica levou o preço do barril abaixo de 80 dólares, sem outliers.
 
@@ -103,9 +124,9 @@ with tab2:
 
         * 2013: Aumento significativo, ultrapassando 60 dólares, sem outliers.
 
-        * **2014: Pequena queda no preço, com alguns outliers abaixo de 60 dólares. Recomenda-se investigar as causas.**
+        * 2014: Pequena queda no preço, com alguns outliers abaixo de 60 dólares. Recomenda-se investigar as causas.**
 
-        * **2015: Queda drástica, com valores variando entre 35 e 65 dólares, sem outliers. Investigação das causas é sugerida.**
+        * 2015: Queda drástica, com valores variando entre 35 e 65 dólares, sem outliers. Investigação das causas é sugerida.**
 
         * 2016: Pequena queda no preço, sem outliers.
 
@@ -115,7 +136,7 @@ with tab2:
 
         * 2019: Preço abaixo de 80 dólares, sem outliers.
 
-        * **2020: A variação foi extrema, com preços entre 10 e 70 dólares, apresentando outliers nos valores mínimo e máximo. Recomenda-se investigar as causas.**
+        * 2020: A variação foi extrema, com preços entre 10 e 70 dólares, apresentando outliers nos valores mínimo e máximo. Recomenda-se investigar as causas.**
 
         * 2021: Aumento no preço, indicando uma normalização, com outliers insignificativos.
 
@@ -128,49 +149,49 @@ with tab2:
 
     st.markdown(
         """
-        *Crescimento da Produção de Petróleo: A produção de petróleo aumentou de forma significativa desde o início dos anos 2000, estabilizando-se em torno de 2010. Esse crescimento reflete avanços na capacidade de produção, possivelmente devido a novas descobertas, avanços tecnológicos, ou investimentos na infraestrutura de extração de petróleo.*
+        Crescimento da Produção de Petróleo: A produção de petróleo aumentou de forma significativa desde o início dos anos 2000, estabilizando-se em torno de 2010. Esse crescimento reflete avanços na capacidade de produção, possivelmente devido a novas descobertas, avanços tecnológicos, ou investimentos na infraestrutura de extração de petróleo.
 
-        *Volatilidade dos Preços do Petróleo: A linha laranja que representa a média dos preços anuais do petróleo mostra uma grande volatilidade. Os preços subiram acentuadamente até cerca de 2008, atingindo um pico, seguido por uma queda acentuada. Depois de 2010, os preços continuaram a flutuar, com uma queda significativa por volta de 2015 e outra em torno de 2020, talvez relacionada a crises econômicas ou eventos globais (como a pandemia de COVID-19 em 2020).*
+        Volatilidade dos Preços do Petróleo: A linha laranja que representa a média dos preços anuais do petróleo mostra uma grande volatilidade. Os preços subiram acentuadamente até cerca de 2008, atingindo um pico, seguido por uma queda acentuada. Depois de 2010, os preços continuaram a flutuar, com uma queda significativa por volta de 2015 e outra em torno de 2020, talvez relacionada a crises econômicas ou eventos globais (como a pandemia de COVID-19 em 2020).
         """)
     
     st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf_3_producao_preco_por_ano.png?raw=true')
 
     st.markdown(
         """
-        *O gráfico da produção anual de barris de petróleo ao longo dos anos de 2000 a 2023, acompanhada da taxa de crescimento percentual anual. A análise dos dados oferece insights importantes sobre as flutuações no setor de petróleo, bem como sobre o impacto de eventos globais específicos na produção.*
+        O gráfico da produção anual de barris de petróleo ao longo dos anos de 2000 a 2023, acompanhada da taxa de crescimento percentual anual. A análise dos dados oferece insights importantes sobre as flutuações no setor de petróleo, bem como sobre o impacto de eventos globais específicos na produção.
 
-        *Estabilidade Inicial (2000–2002): Entre 2000 e 2002, a produção de petróleo manteve-se estável, com oscilações muito pequenas, como o crescimento marginal de 0,04% em 2001 e uma leve queda de 0,26% em 2002.*
+        Estabilidade Inicial (2000–2002): Entre 2000 e 2002, a produção de petróleo manteve-se estável, com oscilações muito pequenas, como o crescimento marginal de 0,04% em 2001 e uma leve queda de 0,26% em 2002.
 
-        *Período de Crescimento Moderado (2003–2008): De 2003 a 2008, a produção apresentou um crescimento constante, especialmente notável em 2004 (6,15%), refletindo um aumento na demanda global impulsionado pelo crescimento econômico em várias regiões, especialmente na Ásia.*
+        Período de Crescimento Moderado (2003–2008): De 2003 a 2008, a produção apresentou um crescimento constante, especialmente notável em 2004 (6,15%), refletindo um aumento na demanda global impulsionado pelo crescimento econômico em várias regiões, especialmente na Ásia.
 
-        *Crise Econômica Global (2009): Em 2009, observa-se uma queda de -1,05% na produção, refletindo o impacto da crise econômica global de 2008-2009, que reduziu a demanda e afetou a produção e os preços do petróleo.*
+        Crise Econômica Global (2009): Em 2009, observa-se uma queda de -1,05% na produção, refletindo o impacto da crise econômica global de 2008-2009, que reduziu a demanda e afetou a produção e os preços do petróleo.
 
-        *Recuperação e Crescimento (2010–2019): Após a crise, a produção volta a crescer, apresentando valores consistentes de aumento na maioria dos anos, com destaques como 2015 (3,28%) e 2018 (2,92%). Esse período reflete o fortalecimento da economia global e a recuperação da demanda por petróleo.*
+        Recuperação e Crescimento (2010–2019): Após a crise, a produção volta a crescer, apresentando valores consistentes de aumento na maioria dos anos, com destaques como 2015 (3,28%) e 2018 (2,92%). Esse período reflete o fortalecimento da economia global e a recuperação da demanda por petróleo.
 
-        *Impacto da Pandemia (2020): Em 2020, há uma queda expressiva de -6,48% na produção, a maior de toda a série, devido à pandemia de COVID-19, que levou a uma redução drástica na demanda por petróleo e no consumo global de energia.*
+        Impacto da Pandemia (2020): Em 2020, há uma queda expressiva de -6,48% na produção, a maior de toda a série, devido à pandemia de COVID-19, que levou a uma redução drástica na demanda por petróleo e no consumo global de energia.
 
-        *Recuperação Pós-Pandemia (2021–2023): A partir de 2021, a produção retoma um crescimento moderado. Em 2022, destaca-se uma recuperação significativa de 4,69%, com a demanda global voltando aos níveis pré-pandêmicos. Em 2023, o crescimento continua, embora em um ritmo mais moderado (1,9%).*
+        Recuperação Pós-Pandemia (2021–2023): A partir de 2021, a produção retoma um crescimento moderado. Em 2022, destaca-se uma recuperação significativa de 4,69%, com a demanda global voltando aos níveis pré-pandêmicos. Em 2023, o crescimento continua, embora em um ritmo mais moderado (1,9%).
         """)
     
     st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf4_crescimento_barris_por_ano.png?raw=true')
 
     st.markdown(
         """
-        *Os dados apresentados mostram a produção de petróleo em barris por ano para os principais países produtores, destacando o domínio de algumas nações no setor.*
+        Os dados apresentados mostram a produção de petróleo em barris por ano para os principais países produtores, destacando o domínio de algumas nações no setor.
 
-        *Estados Unidos lidera a produção global com 307.914 milhões de barris anuais, refletindo sua posição consolidada como principal produtor mundial. A capacidade de extração dos EUA se apoia em avanços tecnológicos, como o fraturamento hidráulico (fracking), que aumentou significativamente a produção nas últimas décadas.*
+        Estados Unidos lidera a produção global com 307.914 milhões de barris anuais, refletindo sua posição consolidada como principal produtor mundial. A capacidade de extração dos EUA se apoia em avanços tecnológicos, como o fraturamento hidráulico (fracking), que aumentou significativamente a produção nas últimas décadas.
 
-        *Arábia Saudita ocupa o segundo lugar, com 259.531 milhões de barris, impulsionada por suas vastas reservas no Oriente Médio e pelo papel central que desempenha na Organização dos Países Exportadores de Petróleo (OPEP).*
+        Arábia Saudita ocupa o segundo lugar, com 259.531 milhões de barris, impulsionada por suas vastas reservas no Oriente Médio e pelo papel central que desempenha na Organização dos Países Exportadores de Petróleo (OPEP).
 
-        *Rússia, em terceiro, com 241.077 milhões de barris, também desempenha um papel fundamental no mercado global de petróleo, fornecendo uma quantidade significativa para a Europa e a Ásia.*
+        Rússia, em terceiro, com 241.077 milhões de barris, também desempenha um papel fundamental no mercado global de petróleo, fornecendo uma quantidade significativa para a Europa e a Ásia.
 
-        *China e Canadá produzem 105.279 milhões e 97.562 milhões de barris, respectivamente. A China, embora seja um grande consumidor de petróleo, possui também uma produção significativa. O Canadá, por sua vez, conta com reservas consideráveis de petróleo, especialmente nas areias betuminosas de Alberta.*
+        China e Canadá produzem 105.279 milhões e 97.562 milhões de barris, respectivamente. A China, embora seja um grande consumidor de petróleo, possui também uma produção significativa. O Canadá, por sua vez, conta com reservas consideráveis de petróleo, especialmente nas areias betuminosas de Alberta.
 
-        *Outros países notáveis incluem o Irã (94.040 milhões), que enfrenta desafios devido a sanções econômicas, e os Emirados Árabes Unidos (79.722 milhões), que são conhecidos por suas reservas abundantes e política energética de expansão.*
+        Outros países notáveis incluem o Irã (94.040 milhões), que enfrenta desafios devido a sanções econômicas, e os Emirados Árabes Unidos (79.722 milhões), que são conhecidos por suas reservas abundantes e política energética de expansão.
 
-        *Iraque (75.532 milhões), Brasil (63.811 milhões), e Kuwait (63.108 milhões) completam a lista, cada um com um papel relevante na produção global. O Brasil, o único país da *América Latina na lista, destaca-se pela exploração de petróleo em águas profundas, como na região do pré-sal.*
+        Iraque (75.532 milhões), Brasil (63.811 milhões), e Kuwait (63.108 milhões) completam a lista, cada um com um papel relevante na produção global. O Brasil, o único país da *América Latina na lista, destaca-se pela exploração de petróleo em águas profundas, como na região do pré-sal.
 
-        *Esses dados sublinham a importância estratégica do petróleo para cada uma dessas economias e evidenciam as diferenças na capacidade de produção entre os países, influenciando o mercado energético global.*
+        Esses dados sublinham a importância estratégica do petróleo para cada uma dessas economias e evidenciam as diferenças na capacidade de produção entre os países, influenciando o mercado energético global.
         """)
     
     st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf5_top_paises_producao.png?raw=true')
@@ -179,12 +200,12 @@ with tab2:
 
     st.markdown(
         """
-        * *O consumo médio de petróleo, representado pelas barras, parece relativamente estável ao longo dos anos, com algumas flutuações, mas sem uma tendência de crescimento ou declínio acentuado. Isso indica que a demanda por petróleo estável ao longo do tempo, apesar de eventuais variações.*
+        * O consumo médio de petróleo, representado pelas barras, parece relativamente estável ao longo dos anos, com algumas flutuações, mas sem uma tendência de crescimento ou declínio acentuado. Isso indica que a demanda por petróleo estável ao longo do tempo, apesar de eventuais variações.
 
-        * *A linha laranja mostra que a produção de petróleo passou por várias oscilações, com uma queda acentuada em meados dos anos 2000 e um aumento significativo a partir de 2010.
-        Esse aumento recente na produção pode estar associado a novas tecnologias de extração, como o fracking, ou à exploração de novos campos petrolíferos.*
+        * A linha laranja mostra que a produção de petróleo passou por várias oscilações, com uma queda acentuada em meados dos anos 2000 e um aumento significativo a partir de 2010.
+        Esse aumento recente na produção pode estar associado a novas tecnologias de extração, como o fracking, ou à exploração de novos campos petrolíferos.
 
-        * *O gráfico destaca a relação complexa entre produção e consumo de petróleo, onde fatores externos e avanços tecnológicos parecem ter papel significativo. A análise dessas tendências ajuda a entender a segurança energética e a dependência de importações, além de fornecer insights sobre a resiliência da produção frente a demandas flutuantes.*
+        * O gráfico destaca a relação complexa entre produção e consumo de petróleo, onde fatores externos e avanços tecnológicos parecem ter papel significativo. A análise dessas tendências ajuda a entender a segurança energética e a dependência de importações, além de fornecer insights sobre a resiliência da produção frente a demandas flutuantes.
         """)
     
     st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf6_producao_consumo_anual.png?raw=true')
@@ -248,7 +269,7 @@ with tab2:
         """
         A crise de 2008, também conhecida como a Grande Recessão, foi uma grave crise financeira global que começou nos Estados Unidos e rapidamente se espalhou pelo mundo. Ela foi desencadeada por uma bolha imobiliária nos EUA, alimentada por empréstimos hipotecários de alto risco (subprime) e práticas financeiras pouco reguladas.
 
-        *Consequências:*
+        Consequências:
         * Recessão Global: A economia mundial encolheu, com empresas falindo e milhões de pessoas perdendo empregos e residências.
         * Crise Bancária: Bancos ao redor do mundo enfrentaram colapsos, forçando governos a intervir com pacotes de resgate.
         * Queda nos Preços do Petróleo: A desaceleração econômica reduziu a demanda por petróleo, provocando uma queda significativa nos preços.
@@ -289,25 +310,25 @@ with tab2:
 
     st.markdown(
         """
-        *O preço do petróleo sofreu uma grande queda no início de 2020, caindo de cerca de $60 para menos de $20 por barril até abril, devido aos lockdowns globais impostos pela pandemia de COVID-19, que reduziram drasticamente a demanda por combustíveis (UNC Global Affairs). Em abril, a crise se agravou, e o excesso de oferta de petróleo, aliado à escassez de armazenamento, levou a preços negativos em alguns mercados dos EUA.*
+        O preço do petróleo sofreu uma grande queda no início de 2020, caindo de cerca de $60 para menos de $20 por barril até abril, devido aos lockdowns globais impostos pela pandemia de COVID-19, que reduziram drasticamente a demanda por combustíveis (UNC Global Affairs). Em abril, a crise se agravou, e o excesso de oferta de petróleo, aliado à escassez de armazenamento, levou a preços negativos em alguns mercados dos EUA.
 
-        *A partir do segundo semestre de 2020, o mercado de petróleo iniciou uma recuperação lenta. No final do ano, o preço se estabilizou em torno de $50 por barril, refletindo a expectativa de recuperação econômica com o início das campanhas de vacinação contra a COVID-19 e a adaptação global às novas condições de mercado.*
+        A partir do segundo semestre de 2020, o mercado de petróleo iniciou uma recuperação lenta. No final do ano, o preço se estabilizou em torno de $50 por barril, refletindo a expectativa de recuperação econômica com o início das campanhas de vacinação contra a COVID-19 e a adaptação global às novas condições de mercado.
         """)
     
     st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf18_pib_tempos_covid.png?raw=true')
 
     st.markdown(
         """
-        *2019-2020: A alta na taxa de juros real pode ser atribuída a expectativas econômicas pré-pandemia, com os países já enfrentando pressões de inflação e crescimento.*
+        2019-2020: A alta na taxa de juros real pode ser atribuída a expectativas econômicas pré-pandemia, com os países já enfrentando pressões de inflação e crescimento.
 
-        *2020-2022: A queda drástica nas taxas de juros reais durante a pandemia pode ser explicada pelas políticas monetárias expansionistas adotadas para combater os efeitos econômicos da COVID-19. O banco central reduziu as taxas de juros para estimular a economia, facilitar o acesso ao crédito e mitigar a recessão econômica causada pela pandemia. A política de juros baixos também pode ter sido usada para combater a deflação, dada a queda na demanda agregada durante o período de confinamento e crise econômica.*
+        2020-2022: A queda drástica nas taxas de juros reais durante a pandemia pode ser explicada pelas políticas monetárias expansionistas adotadas para combater os efeitos econômicos da COVID-19. O banco central reduziu as taxas de juros para estimular a economia, facilitar o acesso ao crédito e mitigar a recessão econômica causada pela pandemia. A política de juros baixos também pode ter sido usada para combater a deflação, dada a queda na demanda agregada durante o período de confinamento e crise econômica.
         """)
     
     st.image(r'https://github.com/torvess/Tech_Challeng_FIAP_Fase_04/blob/main/Midias/gaf19_taxa_juros_tempos_covid.png?raw=true')
 
     st.markdown(
         """
-        *Em 2019, os preços do petróleo se mantiveram relativamente estáveis ao longo do ano, sem grandes variações. No entanto, em 2020, houve uma queda significativa nos preços devido aos impactos da pandemia de COVID-19, que causaram uma redução drástica na demanda global. Em 2021, com a recuperação econômica e a reabertura de mercados, o mercado de petróleo começou a se recuperar, e os preços começaram a subir novamente.*
+        Em 2019, os preços do petróleo se mantiveram relativamente estáveis ao longo do ano, sem grandes variações. No entanto, em 2020, houve uma queda significativa nos preços devido aos impactos da pandemia de COVID-19, que causaram uma redução drástica na demanda global. Em 2021, com a recuperação econômica e a reabertura de mercados, o mercado de petróleo começou a se recuperar, e os preços começaram a subir novamente.
         """
     )
 
@@ -317,13 +338,13 @@ with tab2:
         """
         #### Conclusão:
 
-        * *Impacto da COVID-19: Em todos os gráficos, especialmente no primeiro e segundo, a queda drástica em 2020 confirma o impacto da pandemia no mercado de petróleo. Com a desaceleração global, a demanda caiu abruptamente, causando uma queda histórica nos preços.*
+        * Impacto da COVID-19: Em todos os gráficos, especialmente no primeiro e segundo, a queda drástica em 2020 confirma o impacto da pandemia no mercado de petróleo. Com a desaceleração global, a demanda caiu abruptamente, causando uma queda histórica nos preços.
 
-        * *Recuperação Gradual: A recuperação dos preços é visível após o pior momento da pandemia, com o aumento gradual da demanda conforme as economias reabriram e as viagens voltaram a ocorrer. No entanto, essa recuperação não foi rápida, pois o mercado de petróleo enfrentou desafios de oferta e demanda.*
+        * Recuperação Gradual: A recuperação dos preços é visível após o pior momento da pandemia, com o aumento gradual da demanda conforme as economias reabriram e as viagens voltaram a ocorrer. No entanto, essa recuperação não foi rápida, pois o mercado de petróleo enfrentou desafios de oferta e demanda.
 
-        * *Alta Volatilidade: O terceiro gráfico destaca uma alta volatilidade durante o período mais crítico da pandemia. As grandes flutuações de preço foram provocadas pela incerteza no mercado e pela incapacidade de prever o retorno da demanda, além de choques de oferta devido a decisões da OPEP e disputas entre grandes produtores.*
+        * Alta Volatilidade: O terceiro gráfico destaca uma alta volatilidade durante o período mais crítico da pandemia. As grandes flutuações de preço foram provocadas pela incerteza no mercado e pela incapacidade de prever o retorno da demanda, além de choques de oferta devido a decisões da OPEP e disputas entre grandes produtores.
 
-        * *Tendências de Longo Prazo e Sazonalidade: Os gráficos de tendências mais amplas (segundo e quarto) mostram uma queda prolongada seguida de uma recuperação lenta. Isso aponta para um mercado que, embora fortemente impactado no curto prazo, tem uma capacidade de recuperação cíclica e sazonal conforme as condições macroeconômicas se estabilizam.*
+        * Tendências de Longo Prazo e Sazonalidade: Os gráficos de tendências mais amplas (segundo e quarto) mostram uma queda prolongada seguida de uma recuperação lenta. Isso aponta para um mercado que, embora fortemente impactado no curto prazo, tem uma capacidade de recuperação cíclica e sazonal conforme as condições macroeconômicas se estabilizam.
 
         Fontes: 
         * Bureau of Labor Statistics — From the barrel to the pump: the impact of the COVID-19 pandemic on prices for petroleum products : Monthly Labor Review: U.S. Bureau of Labor Statistics - bls.gov
